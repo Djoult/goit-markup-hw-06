@@ -558,8 +558,8 @@ img {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.form-input:focus + .footer-email-label,
-.form-input:not(:placeholder-shown) + .footer-email-label {
+.newsletter .form-input:focus + .footer-email-label,
+.newsletter .form-input:not(:placeholder-shown) + .footer-email-label {
   opacity: 0;
 }
 .subscribe-button {
@@ -582,7 +582,7 @@ img {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
 }
-.form-input {
+.newsletter .form-input {
   display: block;
   /* box-sizing: border-box; */
   background-color: transparent;
@@ -764,7 +764,8 @@ img {
 
   min-width: 528px;
   min-height: 581px;
-  padding: 15px;
+  /* padding: 15px; */
+  /* padding: 40px 39px 40px 41px; */
 
   background-color: var(--primary-color);
 
@@ -788,8 +789,25 @@ img {
   background-color: var(--primary-color);
   border: 1px solid var(--close-border-color);
 }
-.close-button {
+
+.close-icon {
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
   fill: currentColor;
+}
+.modal-close:hover .close-icon {
+  fill: var(--accent-color);
+}
+.modal-form {
+  width: 100%;
+  padding: 40px 39px 40px 41px;
+}
+.contact-details-head {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--main-color);
 }
 @keyframes show {
   0% {
