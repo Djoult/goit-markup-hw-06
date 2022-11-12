@@ -486,29 +486,49 @@
         </button>
         <form class="form modal-form" autocomplete="off">
           <p class="contact-details-head">Залиште свої дані, ми вам передзвонимо</p>
-      <label class="form-field">
-        <input type="text" class="form-input" name="name" placeholder=" " />
-        <span class="form-label">Ім'я</span>
+          
+      <div class="form-field">
         <svg class="icons-of-modal" width="18" height="18">
-          <use href="./images/icons.svg#icon-person"></use>
-        </svg>
-      </label>
+            <use href="./images/icons.svg#icon-person"></use>
+          </svg>
+        <input
+          type="text"
+          class="form-input"
+          name="name"
+          id="name"
+          placeholder=" "
+        />
+        <label for="name" class="form-label">Ім'я</label>
+      </div>
 
-      <label class="form-field">
-        <input type="phone" class="form-input" name="phone" placeholder=" " />
-        <span class="form-label">Телефон</span>
-        <svg class="icons-of-modal" width="18" height="18">
-          <use href="./images/icons.svg#icon-phone"></use>
-        </svg>
-      </label>
+      <div class="form-field">
+        <svg class="close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-phone"></use>
+          </svg>
+        <input
+          type="tel"
+          class="form-input"
+          name="phone"
+          id="phone"
+          placeholder=" "
+        />
+        <label for="name" class="form-label">Телефон</label>
+      </div>
 
-      <label class="form-field">
-        <input type="email" class="form-input" name="mail" placeholder=" " />
-        <span class="form-label">Пошта</span>
-        <svg class="icons-of-modal" width="18" height="18">
-          <use href="./images/icons.svg#icon-email"></use>
-        </svg>
-      </label>
+      <div class="form-field">
+        <svg class="close-icon" width="18" height="18">
+            <use href="./images/icons.svg#icon-email"></use>
+          </svg>
+        <input
+          type="email"
+          class="form-input"
+          name="mail"
+          id="mail"
+          placeholder=" "
+        />
+        <label for="mail" class="form-label">Пошта</label>
+      </div>
+      
       <button type="submit" class="modal-submit button">Підтвердити</button>
     </form>
       </div>

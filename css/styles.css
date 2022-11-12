@@ -809,6 +809,10 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-color);
 }
+.form-field {
+  position: relative;
+  margin-bottom: 20px;
+}
 @keyframes show {
   0% {
     opacity: 0;
