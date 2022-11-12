@@ -389,7 +389,7 @@
           <a href="./index.html" class="logo"
             ><span class="primary">Web</span><span class="secondary second">Studio</span></a
           >
-          <address>
+          <address class="address">
             <ul class="contact list">
               <li class="list-item">
                 <a
@@ -457,15 +457,22 @@
             </li>
           </ul>
         </div>
-        <div class="newsletter">
-          <form class="form">
-            <h3 class="subscribe">Підпишіться на розсилку</h3>
-            <input type="email" class="form-input" name="email" id="footer-email" placeholder=" " />
-            <button type="submit" class="button subscribe-button">
-              Підписатися<svg class="subscribe-icon" width="24" height="24">
-                <use href="./images/icons.svg#icon-send"></use>
-              </svg>
-            </button>
+          <form class="form newsletter">
+            <p class="subscribe">Підпишіться на розсилку</p>
+            <div class="newsletter-wrapper">
+              <input
+                type="email"
+                class="form-input"
+                name="email"
+                id="footer-email"
+                placeholder=" "
+              />
+              <label for="footer-email" class="footer-email-label">E-mail</label>
+              <button type="submit" class="button subscribe-button">
+                Підписатися<svg class="subscribe-icon" width="24" height="24">
+                  <use href="./images/icons.svg#icon-send"></use>
+                </svg>
+              </button>
           </form>
         </div>
       </div>
